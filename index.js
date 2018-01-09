@@ -51,7 +51,7 @@ export default class MultiToggleSwitch extends Component {
 	render(){
 		return(
 	          <View style={{backgroundColor: 'transparent', marginTop: 10}}>
-			  		<View style={[this.props.itemsContainerBackgroundStyle, {width: (50+15)*this.props.children.length}]}/>
+			  		<View style={this.props.itemsContainerBackgroundStyle}/>
 					{this.renderToggleItems()}
 	          </View>
 		)
@@ -96,6 +96,7 @@ MultiToggleSwitch.defaultProps = {
 	itemsContainerBackgroundStyle: {
 		position: 'absolute',
 		height: 50,
+		width: 200,
 		marginTop: 15,
 		marginLeft: 5,
 		borderRadius: 30,
